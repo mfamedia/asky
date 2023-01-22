@@ -1,19 +1,10 @@
 /*-- asky css | version: beta | MIT LICENSE  */
 
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-/*header*/ @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
-
-/* p testing */@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit&family=Lora&family=Quicksand&family=Sofia+Sans+Semi+Condensed&display=swap');
-/*  font-family: 'Fira Sans', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Lora', serif;
-    font-family: 'Quicksand', sans-serif;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --body-background: #171e27;
-    --text-color: #ffffff;
+    --text-color: #fffff2;
     --link-color: #2872d3;
     --link-color-hover: #86ade0;
 }
@@ -28,7 +19,8 @@ html {
 }
 
 body {
-    font-family: '-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /* font-family: '-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
+    font-family: 'Unbounded', cursive;
     background-color: var(--body-background);
     color: var(--text-color);
     max-width: 800px;
@@ -48,8 +40,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-transform: lowercase;
-    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -80,5 +71,33 @@ h6 {
 
 p {
     text-transform: lowercase;
-    font-family: 'Explora', cursive;
+    font-weight: 200;
+}
+
+blockquote {
+    margin-top: 2rem;
+    margin-right: 0px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
+    padding-top: 0.4rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.8rem;
+    
+    border-left: 0.20rem solid #2872d3;
+
+    font-style: italic;
+}
+
+code {
+    padding-top: 2.5px;
+    padding-right: 5px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    
+    background: #0e141b;
+    color: #ffbe85;
+    border-radius: 6px;
+    font-size: 0.8rem;
 }
