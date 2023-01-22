@@ -1,0 +1,68 @@
+/*-- asky css | version: beta | MIT LICENSE  */
+
+:root {
+    --body-background: #171e27;
+    --text-color: #ffffff;
+    --link-color: #2872d3;
+    --link-color-hover: #86ade0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: '-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: var(--body-background);
+    color: var(--text-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    /* font-size:larger; */
+}
+
+nav a {
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* END NAVBAR */
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+bold {
+    font-weight: 600;
+}

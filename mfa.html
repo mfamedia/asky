@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFA Media</title>
+    <link rel="stylesheet" href="./retro.css">
+</head>
+<body>
+    <h1 id="headermfa"></h1>
+
+    <p id="maintxt"></p>
+
+    <script>
+        var i = 0;
+        var headertxt = 'MFA Media';
+        var speed = 200;
+
+        function typewriterHeader() {
+            if (i < headertxt.length) {
+                document.getElementById('headermfa').innerHTML += headertxt.charAt(i);
+                i++;
+                setTimeout(typewriterHeader, speed);
+            }
+        }
+
+        var maintxt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque explicabo eius voluptates, harum doloremque molestiae accusamus quas aspernatur rem officia impedit ex quam vitae vero sed corporis sint. Eum, deleniti!';
+
+        function typewriterMain() {
+            if (i < maintxt.length) {
+                document.getElementById('maintxt').innerHTML += maintxt.charAt(i);
+                i++;
+                setTimeout(typewriterMain, 50);
+            }
+        }
+
+        window.onload = function() {
+            typewriterHeader();
+            setTimeout(() => {
+                typewriterMain();
+            }, 1750);
+            
+        }
+    </script>
+</body>
+</html>
