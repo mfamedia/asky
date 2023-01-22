@@ -1,5 +1,16 @@
 /*-- asky css | version: beta | MIT LICENSE  */
 
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/*header*/ @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+/* p testing */@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit&family=Lora&family=Quicksand&family=Sofia+Sans+Semi+Condensed&display=swap');
+/*  font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif; */
+
 :root {
     --body-background: #171e27;
     --text-color: #ffffff;
@@ -23,32 +34,10 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 6rem;
 }
 
-/* NAVBAR */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    font-size: ;
-}
-
-nav a {
-    color: white;
-    font-family: monospace;
-    font-size: 16px;
-    text-decoration: none;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-/* END NAVBAR */
 
 a {
     color: var(--link-color);
@@ -59,12 +48,37 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    text-transform: lowercase;
+    font-family: 'Major Mono Display', monospace;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-bold {
-    font-weight: 600;
+h1 {
+    font-size: 3rem;
 }
 
-h
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.15rem;
+}
+
+h6 {
+    font-size: 0.95rem;
+}
+
+p {
+    text-transform: lowercase;
+    font-family: 'Explora', cursive;
+}
