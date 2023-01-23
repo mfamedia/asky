@@ -7,6 +7,17 @@
     --text-color: #fffff2;
     --link-color: #2872d3;
     --link-color-hover: #86ade0;
+    --link-color-visited: #8eacd4;
+    --ul-border-color: rgb(92, 92, 92);
+    --ol-border-color: rgb(92, 92, 92);
+    --input-background-color: #0e1116;
+    --input-background-color-focus: #25333f;
+    --input-outline-color-focus: #86ade0;
+    --input-text-color: #fff;
+
+    /*  --input-background-color: #363e49;
+        --input-background-color-focus: #0e1116;
+        --input-outline-color-focus: #86ade0;  */
 }
 
 * {
@@ -33,16 +44,82 @@ body {
 
 a {
     color: var(--link-color);
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--link-color-hover);
+    text-decoration: underline;
 }
+
+/* a:visited {
+    color: var(--link-color-visited);
+} */
+
+ul {
+    list-style-type: none;
+    border: 1px solid var(--ul-border-color);
+}
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--ul-border-color);
+}
+ul li:last-child {
+    border-bottom: none;
+}
+
+ol {
+    list-style-type: none;
+    border: 1px solid var(--ol-border-color);
+}
+ol li {
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--ol-border-color);
+}
+ol li:last-child {
+    border-bottom: none;
+}
+
+/* label {
+    text-transform: lowercase;
+    font-weight: 200;
+} */
+
+input,
+button {
+    cursor: pointer;
+}
+
+input {
+    background-color: var(--input-background-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--input-text-color);
+    font-family: 'Unbounded', cursive;
+
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    outline: none;
+}
+
+input:focus {
+    outline: 2px solid var(--input-outline-color-focus);
+    background-color: var(--input-background-color-focus);
+    transition: 0.1s;
+}
+
+textarea {
+    background-color: #363e49;
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -72,6 +149,8 @@ h6 {
 p {
     text-transform: lowercase;
     font-weight: 200;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 blockquote {
@@ -100,4 +179,8 @@ code {
     color: #ffbe85;
     border-radius: 6px;
     font-size: 0.8rem;
+}
+
+hr {
+    border: 1px solid #ffffff;
 }
