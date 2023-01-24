@@ -10,10 +10,15 @@
     --link-color-visited: #8eacd4;
     --ul-border-color: rgb(92, 92, 92);
     --ol-border-color: rgb(92, 92, 92);
+    --table-border-color: rgb(92, 92, 92);
     --input-background-color: #0e1116;
     --input-background-color-focus: #25333f;
     --input-outline-color-focus: #86ade0;
     --input-text-color: #fff;
+    --button-background-color: #0e1116;
+    --button-text-color: #fff;
+    --button-outline-color-hover: #86ade0;
+    --button-background-color-hover: #25333f;
 
     /*  --input-background-color: #363e49;
         --input-background-color-focus: #0e1116;
@@ -91,6 +96,8 @@ button {
 }
 
 input {
+    display: block;
+
     background-color: var(--input-background-color);
     border: 1px solid transparent;
     border-radius: 4px;
@@ -99,15 +106,55 @@ input {
 
     font-size: inherit;
     margin-right: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 18px;
     padding: 10px;
     outline: none;
+}
+
+input[type=checkbox] {
+    display: inline-block;
 }
 
 input:focus {
     outline: 2px solid var(--input-outline-color-focus);
     background-color: var(--input-background-color-focus);
     transition: 0.1s;
+}
+
+button {
+    background-color: var(--button-background-color);
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--button-text-color);
+    font-family: 'Unbounded', cursive;
+    font-size: inherit;
+}
+
+button:hover {
+    outline: 2px solid var(--button-outline-color-hover);
+    background-color: var(--button-background-color-hover);
+    transition: 0.1s;
+}
+
+button#warning:hover {
+    outline: 2px solid rgb(189, 74, 74);
+    background-color: #3f252d;
+    transition: 0.1s;
+}
+
+table, th, td {
+  border: 1px solid var(--table-border-color);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
 textarea {
@@ -178,9 +225,10 @@ code {
     background: #0e141b;
     color: #ffbe85;
     border-radius: 6px;
-    font-size: 0.8rem;
+    font-size: inherit;
 }
 
 hr {
     border: 1px solid #ffffff;
+    margin-bottom: 12px;
 }
