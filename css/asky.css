@@ -4,6 +4,7 @@
 
 :root {
     --body-background: #171e27;
+    --body-margin-top: 6rem;
     --text-color: #fffff2;
     --link-color: #2872d3;
     --link-color-hover: #86ade0;
@@ -44,7 +45,7 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6rem;
+    margin-top: var(--body-margin-top);
 }
 
 
@@ -109,6 +110,7 @@ input {
     font-size: inherit;
     margin-right: 6px;
     margin-bottom: 18px;
+    margin-top: 8px;
     padding: 10px;
     outline: none;
 }
@@ -169,6 +171,7 @@ textarea {
     font-size: inherit;
     padding: 10px;
     outline: none;
+    margin-top: 8px;
 }
 
 textarea:focus {
@@ -248,3 +251,27 @@ hr {
     border: 1px solid #ffffff;
     margin-bottom: 12px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+    body {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    input[type=file] {
+        width: 18rem;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

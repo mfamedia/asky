@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asky CSS Docs</title>
+
+    <link rel="stylesheet" href="./addit-style.css">
+    <link rel="stylesheet" href="../css/asky.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#"><h1 style="margin-top: 0;">asky</h1></a>
+        <a href="#" onclick="showInstallation();">1. installation</a>
+        <a href="#" onclick="showHowToUse();">2. how to use</a>
+        <a href="#" onclick="showCustomization();">3. customization</a>
+
+        <br>
+        <a href="#" onclick="toggleDevNav();">Developers</a>
+
+        <div id="sidebar-dev-nav" class="opacity-0">
+            <a href="./dev/css-units.html" class="lm-12">CSS Units</a>
+            <a href="./dev/css-units.html" class="lm-12">CSS Units</a>
+            <a href="./dev/css-units.html" class="lm-12">CSS Units</a>
+            
+        </div>
+
+    </div>
+
+    <iframe id="iframe" src="./user/doc-intro.html" frameborder="0"></iframe>
+
+    <script>
+        function toggleDevNav() {
+            var sidebar = document.getElementById('sidebar-dev-nav');
+            
+            if (sidebar.classList.contains('opacity-0')) {
+                sidebar.classList.remove('opacity-0');
+            } else {
+                sidebar.classList.add('opacity-0');
+            }
+        }
+
+        const mainFrame = document.getElementById('iframe');
+
+        function showInstallation() {
+            mainFrame.src = './user/installation.html';
+        }
+
+        function showHowToUse() {
+            mainFrame.src = './user/how-to-use.html';
+        }
+
+        function showCustomization() {
+            mainFrame.src = './user/customization.html'
+        }
+    </script>
+</body>
+</html>
